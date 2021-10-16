@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        do{
+            var option=parseInt(prompt("Calculator : \n 1.Addition \n 2.Subtraction \n 3.Multiplication \n 4.Division \n Enter the option :"));
+            var num1=parseInt(prompt("Enter the first number :"));
+            var num2=parseInt(prompt("Enter the second number :"));
+            switch(option){
+                case 1:
+                    alert("The addition of " +num1 +" and " +num2 +" is " +(num1+num2));
+                    break;
+                case 2:
+                    alert("The subtraction of " +num1 +" and " +num2 +" is " +(num1-num2));
+                    break; 
+                case 3:
+                    alert("The multiplication of " +num1 +" and " +num2 +" is " +(num1*num2));
+                    break;
+                case 4:
+                    alert("The division of " +num1 +" and " +num2 +" is " +(num1/num2));
+                    break;
+                default:
+                    alert("Invalid option!!!");
+            }
+            var repeat=prompt("Do you want to continue? \n 1.Yes \n 2.No");
+        }while(repeat==1);
+    </script>
+</body>
+</html>
